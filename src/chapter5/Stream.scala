@@ -27,6 +27,12 @@ sealed trait Stream[+A] {
     case Cons(h,t) if p(h()) => Stream.cons(h(), t().takeWhile(p))
     case _ => Stream.empty
   }
+
+  def forAll(p: A => Boolean): Boolean = this match {
+    case Empty => true
+    case Cons(h,t) if !p(h()) => false
+    case Cons(h,t) => t().forAll(p)
+  }
 }
 
 case object Empty extends Stream[Nothing]

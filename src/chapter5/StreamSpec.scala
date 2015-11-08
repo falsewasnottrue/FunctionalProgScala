@@ -54,5 +54,19 @@ class StreamSpec extends Specification {
     "takeWhile with negative predicate" in {
       Stream(1,2,3).takeWhile(i => i % 2 == 0).toList must equalTo(Nil)
     }
+
+    // exercise 5.4
+
+    "forAll yields true" in  {
+      Stream(1,2,3).forAll(i => i > 0) must equalTo(true)
+    }
+
+    "forAll yields false" in {
+      Stream(1,2,-3).forAll(i => i > 0) must equalTo(false)
+    }
+
+    "all predicates are true over an empty set" in {
+      Stream.empty[Int].forAll(i => i != i) must equalTo(true)
+    }
   }
 }
