@@ -120,5 +120,19 @@ class StreamSpec extends Specification {
     "fibonacci implemented through unfold" in {
       Stream.fibsUnfold.take(6).toList must equalTo(List(0,1,1,2,3,5))
     }
+
+    // exercise 5.12
+
+    "infinite stream of increasing integers through unfold" in {
+      Stream.fromUnfold(3).take(3).toList must equalTo(List(3,4,5))
+    }
+
+    "constant stream through unfold" in {
+      Stream.constantUnfold(1).take(3).toList must equalTo(List(1,1,1))
+    }
+
+    "ones through unfold" in {
+      Stream.onesUnfold.take(3).toList must equalTo(List(1,1,1))
+    }
   }
 }

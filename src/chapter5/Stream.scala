@@ -89,4 +89,13 @@ object Stream {
 
   def fibsUnfold: Stream[Int] =
     unfold[Int, (Int, Int)]((0,1)){ case (m,n) => Some(m, (n, m+n)) }
+
+  def fromUnfold(n: Int): Stream[Int] =
+    unfold[Int, Int](n)(n => Some((n, n+1)))
+
+  def constantUnfold[A](a: A): Stream[A] =
+    unfold[A,A](a)(a => Some((a,a)))
+
+  def onesUnfold: Stream[Int] =
+    unfold[Int, Unit]()(_ => Some((1, ())))
 }
