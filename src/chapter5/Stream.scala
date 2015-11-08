@@ -22,6 +22,11 @@ sealed trait Stream[+A] {
       case Empty => Stream.empty
       case Cons(h, t) => t().drop(n-1)
     }
+
+  def takeWhile(p: A => Boolean): Stream[A] = this match {
+    case Cons(h,t) if p(h()) => Stream.cons(h(), t().takeWhile(p))
+    case _ => Stream.empty
+  }
 }
 
 case object Empty extends Stream[Nothing]

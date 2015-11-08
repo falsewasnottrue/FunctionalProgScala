@@ -44,5 +44,15 @@ class StreamSpec extends Specification {
     "drop 0" in {
       Stream(1,2,3).drop(0).toList must equalTo(List(1,2,3))
     }
+
+    // exercise 5.3
+
+    "takeWhile with positive predicate" in {
+      Stream(1,2,3).takeWhile(i => i % 2 == 1).toList must equalTo(List(1))
+    }
+
+    "takeWhile with negative predicate" in {
+      Stream(1,2,3).takeWhile(i => i % 2 == 0).toList must equalTo(Nil)
+    }
   }
 }
