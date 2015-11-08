@@ -6,6 +6,11 @@ sealed trait Stream[+A] {
     case Cons(h,t) => Some(h())
   }
 
+  def foldRight[B](z: => B)(f: (A, =>B) => B): B = this match {
+    case Cons(h,t) => f(h(), t().foldRight(z)(f))
+    case _ => z
+  }
+
   def toList: List[A] = this match {
     case Empty => Nil
     case Cons(h, t) => h() :: t().toList
