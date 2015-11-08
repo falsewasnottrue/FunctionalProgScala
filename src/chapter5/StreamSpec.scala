@@ -96,5 +96,11 @@ class StreamSpec extends Specification {
     "append is implemented by foldRight" in {
       Stream(1,2,3).append(Stream(4,5,6)).toList must equalTo(List(1,2,3,4,5,6))
     }
+
+    // exercise 5.8
+
+    "constant stream" in {
+      Stream.constant(1).take(3).toList must equalTo(List(1,1,1))
+    }
   }
 }
