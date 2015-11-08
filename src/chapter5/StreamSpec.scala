@@ -108,5 +108,11 @@ class StreamSpec extends Specification {
     "infinite stream of increasing integers" in {
       Stream.from(3).take(3).toList must equalTo(List(3,4,5))
     }
+
+    // exercise 5.10
+
+    "fibonacci stream" in {
+      Stream.fibs.take(6).toList must equalTo(List(0,1,1,2,3,5))
+    }
   }
 }
