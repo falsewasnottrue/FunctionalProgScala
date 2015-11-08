@@ -98,4 +98,13 @@ object Stream {
 
   def onesUnfold: Stream[Int] =
     unfold[Int, Unit]()(_ => Some((1, ())))
+
+  // ---
+  def startsWith[A](s1: Stream[A], s2: Stream[A]): Boolean =
+    unfold[Boolean, (Stream[A], Stream[A])]((s1, s2)) {
+      case (Empty, Empty) => None
+      case (Empty, _) => Some(false, (Stream.empty, Stream.empty))
+      case (_, Empty) => None
+      case (Cons(h1,t1), Cons(h2,t2)) => Some(h1() == h2(), (t1(),t2()))
+    }.forAll(_ == true)
 }

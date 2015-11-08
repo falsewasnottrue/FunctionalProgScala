@@ -134,5 +134,23 @@ class StreamSpec extends Specification {
     "ones through unfold" in {
       Stream.onesUnfold.take(3).toList must equalTo(List(1,1,1))
     }
+
+    // exercise 5.13
+
+    "every stream starts with the empty stream" in {
+      Stream.startsWith(Stream(1,2,3), Stream.empty) must equalTo(true)
+      Stream.startsWith(Stream.empty, Stream.empty) must equalTo(true)
+    }
+
+    "positive examples startsWith" in {
+      Stream.startsWith(Stream(1,2,3), Stream(1,2)) must equalTo(true)
+      Stream.startsWith(Stream(1,2), Stream(1,2)) must equalTo(true)
+    }
+
+    "negative exmaples startsWith" in {
+      Stream.startsWith(Stream(1,2,3), Stream(1,3)) must equalTo(false)
+      Stream.startsWith(Stream(1,2,3), Stream(2,3)) must equalTo(false)
+      Stream.startsWith(Stream(1,2), Stream(1,2,3)) must equalTo(false)
+    }
   }
 }
