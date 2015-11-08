@@ -102,5 +102,11 @@ class StreamSpec extends Specification {
     "constant stream" in {
       Stream.constant(1).take(3).toList must equalTo(List(1,1,1))
     }
+
+    // exercise 5.9
+
+    "infinite stream of increasing integers" in {
+      Stream.from(3).take(3).toList must equalTo(List(3,4,5))
+    }
   }
 }
