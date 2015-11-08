@@ -68,5 +68,15 @@ class StreamSpec extends Specification {
     "all predicates are true over an empty set" in {
       Stream.empty[Int].forAll(i => i != i) must equalTo(true)
     }
+
+    // exercise 5.6
+
+    "headOption for empty list returns None" in {
+      Stream.empty.headOption must equalTo(None)
+    }
+
+    "headOption for non-empty list returns first element" in {
+      Stream(1,2,3).headOption must equalTo(Some(1))
+    }
   }
 }
