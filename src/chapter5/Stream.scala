@@ -77,4 +77,16 @@ object Stream {
     Stream.cons(0, fibsMN(0,1))
   }
 
+  // ---
+
+  def unfold[A,S](z:S)(f: S => Option[(A,S)]): Stream[A] = {
+    def produce(s: S): Stream[A] = f(s) match {
+      case None => Stream.empty
+      case Some((a,next)) => Stream.cons(a, produce(next))
+    }
+    produce(z)
+  }
+
+  def fibsUnfold: Stream[Int] =
+    unfold[Int, (Int, Int)]((0,1)){ case (m,n) => Some(m, (n, m+n)) }
 }

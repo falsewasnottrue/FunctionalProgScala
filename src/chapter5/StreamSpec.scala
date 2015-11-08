@@ -114,5 +114,11 @@ class StreamSpec extends Specification {
     "fibonacci stream" in {
       Stream.fibs.take(6).toList must equalTo(List(0,1,1,2,3,5))
     }
+
+    // exercise 5.11
+
+    "fibonacci implemented through unfold" in {
+      Stream.fibsUnfold.take(6).toList must equalTo(List(0,1,1,2,3,5))
+    }
   }
 }
