@@ -1,20 +1,29 @@
 package chapter5
 
 sealed trait Stream[+A] {
-  def headOption: Option[A] =
-    foldRight[Option[A]](None)((hd, tl) => Some(hd))
-
-  /**
-  this match {
-    case Empty => None
-    case Cons(h,t) => Some(h())
-  }
-  */
-
   def foldRight[B](z: => B)(f: (A, =>B) => B): B = this match {
     case Cons(h,t) => f(h(), t().foldRight(z)(f))
     case _ => z
   }
+
+  def map[B](f: A => B): Stream[B] =
+    foldRight[Stream[B]](Stream.empty)((hd, tl) => Stream.cons(f(hd), tl))
+
+  def flatMap[B](f: A => Stream[B]): Stream[B] =
+    foldRight[Stream[B]](Stream.empty)((hd, tl) => f(hd) match {
+      case Empty => tl
+      case Cons(h, _) => Stream.cons(h(), tl)
+    })
+
+  def filter(p: A => Boolean): Stream[A] =
+    foldRight[Stream[A]](Stream.empty)((hd, tl) => if (p(hd)) Stream.cons(hd, tl.filter(p)) else tl.filter(p))
+
+  def append[B >: A](that: Stream[B]): Stream[B] =
+    foldRight[Stream[B]](that)((hd, tl) => Stream.cons(hd, tl))
+
+  def headOption: Option[A] =
+    foldRight[Option[A]](None)((hd, tl) => Some(hd))
+
 
   def toList: List[A] = this match {
     case Empty => Nil
@@ -36,12 +45,6 @@ sealed trait Stream[+A] {
   def takeWhile(p: A => Boolean): Stream[A] =
     foldRight[Stream[A]](Stream.empty)((hd,tl) => if (p(hd)) Stream.cons(hd, tl.takeWhile(p)) else Stream.empty)
 
-  /**
-  this match {
-    case Cons(h,t) if p(h()) => Stream.cons(h(), t().takeWhile(p))
-    case _ => Stream.empty
-  }
-  */
   def forAll(p: A => Boolean): Boolean = this match {
     case Empty => true
     case Cons(h,t) if !p(h()) => false

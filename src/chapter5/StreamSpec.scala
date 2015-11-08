@@ -78,5 +78,23 @@ class StreamSpec extends Specification {
     "headOption for non-empty list returns first element" in {
       Stream(1,2,3).headOption must equalTo(Some(1))
     }
+
+    // exercise 5.7
+
+    "map is implemented by foldRight" in {
+      Stream(1,2,3).map(_ + 1).toList must equalTo(List(2,3,4))
+    }
+
+    "flatMap is implemented by foldRight" in {
+      Stream(1,2,3).flatMap(i => Stream(i.toString)).toList must equalTo(List("1", "2", "3"))
+    }
+
+    "filter is implemented by foldRight" in {
+      Stream(1,2,3).filter(i => i % 2 == 0).toList must equalTo(List(2))
+    }
+
+    "append is implemented by foldRight" in {
+      Stream(1,2,3).append(Stream(4,5,6)).toList must equalTo(List(1,2,3,4,5,6))
+    }
   }
 }
