@@ -28,11 +28,15 @@ sealed trait Stream[+A] {
       case Cons(h, t) => t().drop(n-1)
     }
 
-  def takeWhile(p: A => Boolean): Stream[A] = this match {
+  def takeWhile(p: A => Boolean): Stream[A] =
+    foldRight[Stream[A]](Stream.empty)((hd,tl) => if (p(hd)) Stream.cons(hd, tl.takeWhile(p)) else Stream.empty)
+  
+  /**
+  this match {
     case Cons(h,t) if p(h()) => Stream.cons(h(), t().takeWhile(p))
     case _ => Stream.empty
   }
-
+  */
   def forAll(p: A => Boolean): Boolean = this match {
     case Empty => true
     case Cons(h,t) if !p(h()) => false
