@@ -94,4 +94,7 @@ object RNG {
       val (tail, nextRng) = ints(count-1)(rng2)
       (i :: tail, nextRng)
     }
+
+  def intsViaSequence(count: Int): Rand[List[Int]] =
+    sequence(List.fill[Rand[Int]](count)(positiveInt))
 }

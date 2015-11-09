@@ -55,20 +55,10 @@ class RNGSpec extends Specification {
 
     // exercise 6.8
     "combine list of Rand generators" in {
-      val rndTuple = RNG.sequence(
-        List(
-          RNG.double: Rand[Double],
-          RNG.positiveInt: Rand[Int],
-          RNG.double: Rand[Double],
-          RNG.positiveInt: Rand[Int]
-        )
-      )(rng)._1
+      val is = RNG.intsViaSequence(4)(rng)
 
-      rndTuple.size must beEqualTo(4)
-      rndTuple(0).isInstanceOf[Double] must beTrue
-      rndTuple(1).isInstanceOf[Int] must beTrue
-      rndTuple(2).isInstanceOf[Double] must beTrue
-      rndTuple(3).isInstanceOf[Int] must beTrue
+      is._1.length must equalTo(4)
+      is._2 must be_!=(rng)
     }
   }
 }
