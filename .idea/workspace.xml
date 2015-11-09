@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6c101bf-c4a4-4e96-bc00-1e9b6935325b" name="Default" comment="exercise 6.1">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Cons$.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Cons.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Empty$.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Empty.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$append$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$append$2$$anonfun$apply$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$append$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$apply$7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$apply$8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$chapter5$Stream$$fibsMN$1$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$chapter5$Stream$$fibsMN$1$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$chapter5$Stream$$produce$1$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$chapter5$Stream$$produce$1$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$cons$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$cons$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$constant$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$constant$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$constantUnfold$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$fibs$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$fibs$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$fibsUnfold$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$filter$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$filter$2$$anonfun$apply$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$filter$2$$anonfun$apply$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$filter$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$flatMap$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$flatMap$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$foldRight$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$from$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$from$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$fromUnfold$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$headOption$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$headOption$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$map$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$map$2$$anonfun$apply$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$map$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$onesUnfold$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$startsWith$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$startsWith$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$take$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$takeWhile$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$takeWhile$2$$anonfun$apply$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$takeWhile$2$$anonfun$apply$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$$anonfun$takeWhile$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream$class.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Stream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$100$$anonfun$apply$101.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$100$$anonfun$apply$102$$anonfun$apply$103.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$100$$anonfun$apply$102.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$100.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$104$$anonfun$apply$105.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$104$$anonfun$apply$106$$anonfun$apply$107.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$104$$anonfun$apply$106.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$104.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$108$$anonfun$apply$109.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$108$$anonfun$apply$110$$anonfun$apply$111.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$108$$anonfun$apply$110.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$108.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$112$$anonfun$apply$113.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$112$$anonfun$apply$114$$anonfun$apply$115.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$112$$anonfun$apply$114.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$112.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$116$$anonfun$apply$117.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$116$$anonfun$apply$118$$anonfun$apply$119.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$116$$anonfun$apply$118.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$116.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$120$$anonfun$apply$121.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$120$$anonfun$apply$122$$anonfun$apply$123.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$120$$anonfun$apply$122.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$120.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$124$$anonfun$apply$125.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$124$$anonfun$apply$126$$anonfun$apply$127.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$124$$anonfun$apply$126.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$124.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$128$$anonfun$apply$129.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$128$$anonfun$apply$130$$anonfun$apply$131.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$128$$anonfun$apply$130.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$128.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$132$$anonfun$apply$11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$132$$anonfun$apply$13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$132$$anonfun$apply$133$$anonfun$apply$12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$132$$anonfun$apply$133.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$132$$anonfun$apply$134$$anonfun$apply$14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$132$$anonfun$apply$134.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$132.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$135$$anonfun$apply$136$$anonfun$apply$16.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$135$$anonfun$apply$136.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$135$$anonfun$apply$137$$anonfun$apply$18.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$135$$anonfun$apply$137.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$135$$anonfun$apply$15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$135$$anonfun$apply$17.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$135.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$139$$anonfun$apply$20.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$139.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$140$$anonfun$apply$22.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$140.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$141$$anonfun$apply$24.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$141.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$19.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$21.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138$$anonfun$apply$23.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$138.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$25$$anonfun$apply$26.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$25$$anonfun$apply$27$$anonfun$apply$28.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$25$$anonfun$apply$27.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$25.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$29$$anonfun$apply$30.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$29$$anonfun$apply$31$$anonfun$apply$32.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$29$$anonfun$apply$31.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$29.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$33$$anonfun$apply$34.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$33$$anonfun$apply$35$$anonfun$apply$36.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$33$$anonfun$apply$35.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$33.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$37$$anonfun$apply$38.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$37$$anonfun$apply$39$$anonfun$apply$40.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$37$$anonfun$apply$39.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$37.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$41$$anonfun$apply$42.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$41$$anonfun$apply$43$$anonfun$apply$44.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$41$$anonfun$apply$43.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$41.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$45$$anonfun$apply$46.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$45$$anonfun$apply$47$$anonfun$apply$48.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$45$$anonfun$apply$47.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$45.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$49$$anonfun$apply$50.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$49$$anonfun$apply$51$$anonfun$apply$52.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$49$$anonfun$apply$51.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$49.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$53$$anonfun$apply$54.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$53$$anonfun$apply$55$$anonfun$apply$56.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$53$$anonfun$apply$55.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$53.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$57$$anonfun$apply$58.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$57$$anonfun$apply$59$$anonfun$apply$60.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$57$$anonfun$apply$59.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$57.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$61$$anonfun$apply$62.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$61$$anonfun$apply$63$$anonfun$apply$64.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$61$$anonfun$apply$63.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$61.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$65$$anonfun$apply$66$$anonfun$apply$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$65$$anonfun$apply$66.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$65$$anonfun$apply$67$$anonfun$apply$68.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$65$$anonfun$apply$67.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$65.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$69$$anonfun$apply$70$$anonfun$apply$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$69$$anonfun$apply$70.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$69$$anonfun$apply$71$$anonfun$apply$72.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$69$$anonfun$apply$71.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$69.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$73$$anonfun$apply$3$$anonfun$apply$mcZ$sp$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$73$$anonfun$apply$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$73$$anonfun$apply$74$$anonfun$apply$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$73$$anonfun$apply$74.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$73.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$75$$anonfun$apply$5$$anonfun$apply$mcZ$sp$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$75$$anonfun$apply$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$75$$anonfun$apply$76$$anonfun$apply$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$75$$anonfun$apply$76.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$75.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$77$$anonfun$apply$7$$anonfun$apply$mcZ$sp$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$77$$anonfun$apply$7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$77$$anonfun$apply$78$$anonfun$apply$8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$77$$anonfun$apply$78.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$77.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$79$$anonfun$apply$80.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$79$$anonfun$apply$81$$anonfun$apply$82.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$79$$anonfun$apply$81.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$79.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$83$$anonfun$apply$84.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$83$$anonfun$apply$85$$anonfun$apply$86.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$83$$anonfun$apply$85.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$83.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$87$$anonfun$apply$88$$anonfun$apply$9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$87$$anonfun$apply$88.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$87$$anonfun$apply$89$$anonfun$apply$90.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$87$$anonfun$apply$89.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$87.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$91$$anonfun$apply$92$$anonfun$apply$93.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$91$$anonfun$apply$92.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$91$$anonfun$apply$94$$anonfun$apply$95.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$91$$anonfun$apply$94.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$91.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$96$$anonfun$apply$97$$anonfun$apply$10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$96$$anonfun$apply$97.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$96$$anonfun$apply$98$$anonfun$apply$99.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$96$$anonfun$apply$98.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1$$anonfun$apply$96.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec$$anonfun$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/StreamSpec.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNG$$anon$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNG$.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNG.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNGSpec$$anonfun$1$$anonfun$apply$2$$anonfun$apply$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNGSpec$$anonfun$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNGSpec$$anonfun$1$$anonfun$apply$2$$anonfun$apply$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNGSpec$$anonfun$1$$anonfun$apply$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNGSpec$$anonfun$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/RNGSpec.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FunctionalProgScala.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter5/Test.sc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/FunctionalProgScala/chapter6/Test.sc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/specs2-reports/stats/chapter5.StreamSpec.stats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/specs2-reports/stats/chapter6.RNGSpec.stats" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/org_specs2_specs2_2_11_0_RC3_2_3_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_specs2_specs2_2_11_2_3_11.xml" />
+    </list>
+    <list id="c2a65983-40d6-4677-9088-f87cb86b5b96" name="Failed commit: Default" comment="exercise 6.1">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chapter6/RNG.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chapter6/RNGSpec.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chapter6/Test.sc" />
+    </list>
+    <ignored path="FunctionalProgScala.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FunctionalProgScala" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="StreamSpec.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chapter5/StreamSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RNG.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chapter6/RNG.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RNGSpec.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chapter6/RNGSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.sc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chapter6/Test.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.12605043">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Scala Script" />
+        <option value="Scala Worksheet" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lepaingeant" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/chapter6/Test.sc.scala" />
+        <option value="$PROJECT_DIR$/src/chapter6/Test.sc" />
+        <option value="$PROJECT_DIR$/src/chapter6/RNG.scala" />
+        <option value="$PROJECT_DIR$/src/chapter6/RNGSpec.scala" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1276" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RNG.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunctionalProgScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Specs2.RNGSpec">
+    <configuration default="false" name="StreamSpec" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FunctionalProgScala" />
+      <setting name="path" value="chapter5.StreamSpec" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RNGSpec" type="Specs2RunConfiguration" factoryName="Specs2" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FunctionalProgScala" />
+      <setting name="path" value="chapter6.RNGSpec" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="FunctionalProgScala" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Specs2.StreamSpec" />
+      <item index="1" class="java.lang.String" itemvalue="Specs2.RNGSpec" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Specs2.RNGSpec" />
+        <item index="1" class="java.lang.String" itemvalue="Specs2.StreamSpec" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../assets-test" value="1445861884000" />
+        <entry key="$PROJECT_DIR$/../../play-bigpipe-with-rxjava-hystrix" value="1446562984000" />
+        <entry key="$PROJECT_DIR$/../../seo-description-micro-service" value="1443428486000" />
+        <entry key="$PROJECT_DIR$/../../seo-indexation-micro-service" value="1446472357000" />
+        <entry key="$PROJECT_DIR$/../../stt-async-dynamodb" value="1444727692000" />
+        <entry key="$PROJECT_DIR$/../../stt-libraries" value="1446541998000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6c101bf-c4a4-4e96-bc00-1e9b6935325b" name="Default" comment="" />
+      <created>1447062948367</created>
+      <option name="number" value="Default" />
+      <updated>1447062948367</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="RNGSpec - 2015.11.09 at 11h 45m 08s.xml">
+      <configuration name="RNGSpec" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="StreamSpec - 2015.11.09 at 11h 33m 49s.xml">
+      <configuration name="StreamSpec" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+    <history-entry file="StreamSpec - 2015.11.09 at 11h 35m 07s.xml">
+      <configuration name="StreamSpec" configurationId="Specs2RunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="23" width="1276" height="777" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4643399" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38006482" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="exercise 6.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="exercise 6.1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/chapter5/StreamSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chapter6/Test.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12605043">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chapter6/RNG.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chapter6/RNGSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FunctionalProgScala</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.specs2:specs2_2.11:2.3.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
