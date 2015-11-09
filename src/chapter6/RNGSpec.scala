@@ -60,5 +60,25 @@ class RNGSpec extends Specification {
       is._1.length must equalTo(4)
       is._2 must be_!=(rng)
     }
+
+    // exercise 6.10
+    "map through flatMap" in {
+      val s: Rand[Int] = RNG.positiveInt
+
+      val m1 = RNG.map(s)(i => i * 2)
+      val m2 = RNG.mapViaFlatMap(s)(i => i * 2)
+
+      m1(rng)._1 must equalTo(m2(rng)._1)
+    }
+
+    "map2 through flatMap" in {
+      val s: Rand[Int] = RNG.positiveInt
+      val d: Rand[Double] = RNG.double
+
+      val m1 = RNG.map2(s, d) { case (i,d) => (i,d) }
+      val m2 = RNG.map2ViaFlatMap(s,d) { case (i,d) => (i,d) }
+
+      m1(rng)._1 must equalTo(m2(rng)._1)
+    }
   }
 }
