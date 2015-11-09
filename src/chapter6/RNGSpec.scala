@@ -1,5 +1,6 @@
 package chapter6
 
+import chapter6.RNG.Rand
 import org.specs2.mutable.Specification
 
 class RNGSpec extends Specification {
@@ -50,6 +51,24 @@ class RNGSpec extends Specification {
       rndIntDouble._1 must be_>=(1)
       rndIntDouble._2 must be_>=(0.0)
       rndIntDouble._2 must be_<=(1.0)
+    }
+
+    // exercise 6.8
+    "combine list of Rand generators" in {
+      val rndTuple = RNG.sequence(
+        List(
+          RNG.double: Rand[Double],
+          RNG.positiveInt: Rand[Int],
+          RNG.double: Rand[Double],
+          RNG.positiveInt: Rand[Int]
+        )
+      )(rng)._1
+
+      rndTuple.size must beEqualTo(4)
+      rndTuple(0).isInstanceOf[Double] must beTrue
+      rndTuple(1).isInstanceOf[Int] must beTrue
+      rndTuple(2).isInstanceOf[Double] must beTrue
+      rndTuple(3).isInstanceOf[Int] must beTrue
     }
   }
 }

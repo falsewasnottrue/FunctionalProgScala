@@ -7,6 +7,7 @@ trait RNG {
 object RNG {
   type Rand[+A] = RNG => (A, RNG)
 
+  // Rand combinators
   def unit[A](a: A): Rand[A] = rng => (a, rng)
 
   def map[A, B](s: Rand[A])(f: A => B): Rand[B] = rng => {
@@ -19,6 +20,23 @@ object RNG {
     val (b, rng3) = rb(rng2)
     (f(a,b), rng3)
   }
+
+  def sequence[A](fs: List[Rand[A]]): Rand[List[A]] = fs match {
+    case Nil => throw new IllegalArgumentException
+    case f :: Nil => { rng => {
+        val (nextA, nextRng) = f(rng)
+        (List(nextA), nextRng)
+      }
+    }
+    case f :: fss => { rng => {
+        val (nextA, nextRng) = f(rng)
+        val (tail, lastRng) = sequence(fss)(nextRng)
+        (nextA :: tail, lastRng)
+      }
+    }
+  }
+
+  // ---
 
   def positiveMax(n: Int): Rand[Int] = map(positiveInt)(i => i % n)
 
