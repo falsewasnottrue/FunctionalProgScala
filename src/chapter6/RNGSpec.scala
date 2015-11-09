@@ -18,5 +18,13 @@ class RNGSpec extends Specification {
       rndDouble must be_>=(0.0)
       rndDouble must be_<=(1.0)
     }
+
+    "generate list of random ints" in {
+      val rng = RNG.simple(System.currentTimeMillis())
+      val is = RNG.ints(4)(rng)
+
+      is._1.length must equalTo(4)
+      is._2 must be_!=(rng)
+    }
   }
 }

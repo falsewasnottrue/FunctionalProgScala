@@ -44,4 +44,13 @@ object RNG {
 
     ((d1, d2, d3), rng3)
   }
+
+  def ints(count: Int)(rng: RNG): (List[Int], RNG) =
+    if (count == 0) {
+      (Nil, rng)
+    } else {
+      val (i, rng2) = rng.nextInt
+      val (tail, nextRng) = ints(count-1)(rng2)
+      (i :: tail, nextRng)
+    }
 }
