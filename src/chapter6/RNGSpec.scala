@@ -36,5 +36,14 @@ class RNGSpec extends Specification {
       res._1 must be_>=(0)
       res._1 must be_<=(4)
     }
+
+    // exercise 6.6
+    "generate double through map" in {
+      val rng = RNG.simple(System.currentTimeMillis())
+      val rndDouble = RNG.doubleViaMap(rng)._1
+      
+      rndDouble must be_>=(0.0)
+      rndDouble must be_<=(1.0)
+    }
   }
 }
