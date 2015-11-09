@@ -10,5 +10,13 @@ class RNGSpec extends Specification {
       val rng = RNG.simple(System.currentTimeMillis())
       RNG.positiveInt(rng)._1 must be_>=(0)
     }
+
+    // exercise 6.2
+    "generate double between 0 and 1" in {
+      val rng = RNG.simple(System.currentTimeMillis())
+      val rndDouble = RNG.double(rng)._1
+      rndDouble must be_>=(0.0)
+      rndDouble must be_<=(1.0)
+    }
   }
 }

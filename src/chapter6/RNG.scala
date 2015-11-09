@@ -2,7 +2,6 @@ package chapter6
 
 trait RNG {
   def nextInt: (Int, RNG)
-
 }
 
 object RNG {
@@ -19,4 +18,11 @@ object RNG {
     val positiveInt = if (i == Int.MinValue) (i+1).abs else i.abs
     (positiveInt, nextRng)
   }
+
+  // generate a double between 0 and 1
+  def double(rng: RNG): (Double, RNG) = {
+    val (i, r) = positiveInt(rng)
+    (i / (Int.MaxValue.toDouble + 1), r)
+  }
+
 }
