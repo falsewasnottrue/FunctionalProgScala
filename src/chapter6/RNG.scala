@@ -5,17 +5,20 @@ trait RNG {
 }
 
 object RNG {
-  type Rand[+A] = RNG => (A, RNG)
 
-  // Rand combinators
-  def unit[A](a: A): Rand[A] = rng => (a, rng)
+  type State[S,+A] = S => (A,S)
+  type Rand[+A] = State[RNG,A]
 
-  def map[A, B](s: Rand[A])(f: A => B): Rand[B] = rng => {
+  // State combinators
+
+  def unit[S, A](a: A): State[S,A] = rng => (a, rng)
+
+  def map[S,A,B](s: State[S,A])(f: A => B): State[S,B] = rng => {
     val (a, rng2) = s(rng)
     (f(a), rng2)
   }
 
-  def flatMap[A,B](f: Rand[A])(g: A => Rand[B]): Rand[B] = rng => {
+  def flatMap[S,A,B](f: State[S,A])(g: A => State[S,B]): State[S,B] = rng => {
     val (a, rng2) = f(rng)
     g(a)(rng2)
   }
