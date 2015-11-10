@@ -8,3 +8,8 @@ RNG.ints(0)(rng2)
 val constant1 = State.constant(1)
 
 val (a, s) = constant1.run()
+
+for {
+  s <- constant1.get
+  _ <- constant1.set(f(s))
+} yield 1
