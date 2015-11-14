@@ -18,4 +18,6 @@ object Par {
 
   def async[A](a: => A): Par[A] = fork(unit(a))
   def run[A](s: ExecutorService)(a: Par[A]): Future[A] = a(s)
+
+  def asyncF[A,B](f: A => B): A => Par[B] = a => async(f(a))
 }
