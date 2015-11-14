@@ -11,13 +11,24 @@ object Par {
 
   def unit[A](a: A): Par[A] = _ => Future.successful(a)
   def fork[A](a: => Par[A]): Par[A] = es => a(es)
-  def map2[A,B,C](a: Par[A], b: Par[B])(f: (A,B) => C): Par[C] = es => for {
-    resA <- a(es)
-    resB <- b(es)
-  } yield f(resA, resB)
 
   def async[A](a: => A): Par[A] = fork(unit(a))
   def run[A](s: ExecutorService)(a: Par[A]): Future[A] = a(s)
 
   def asyncF[A,B](f: A => B): A => Par[B] = a => async(f(a))
+
+  def product[A,B](fa: Par[A], fb: Par[B]): Par[(A,B)] = es => for {
+    a <- fa(es)
+    b <- fb(es)
+  } yield (a,b)
+  def map[A,B](fa: Par[A])(f: A => B): Par[B] =
+    map2(fa, unit(()))((a,_) => f(a))
+
+  def map2[A,B,C](fa: Par[A], fb: Par[B])(f: (A,B) => C): Par[C] =
+    map(product(fa,fb)) {
+      case (a,b) => f(a,b)
+    }
+
+  def sorted(l: Par[List[Int]]) = map(l)(_.sorted)
+
 }
