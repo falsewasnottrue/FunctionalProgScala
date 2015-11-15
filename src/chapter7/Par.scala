@@ -31,4 +31,13 @@ object Par {
 
   def sorted(l: Par[List[Int]]) = map(l)(_.sorted)
 
+  def parMap[A,B](l: List[A])(f: A => B): Par[List[B]] = fork {
+    val fbs: List[Par[B]] = l.map(asyncF(f))
+    sequence(fbs)
+  }
+
+  def sequence[A](l: List[Par[A]]): Par[List[A]] = l match {
+    case Nil => unit(Nil)
+    case l0 :: ls => map2(l0, sequence(ls))(_ :: _)
+  }
 }
