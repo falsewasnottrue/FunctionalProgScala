@@ -36,6 +36,9 @@ object Par {
     sequence(fbs)
   }
 
+  def parFilter[A](as: List[A])(f: A => Boolean): Par[List[A]] =
+    map(parMap(as)(a => if (f(a)) Some(a) else None))(maybeA => maybeA.filter(_.isDefined).map(_.get))
+
   def sequence[A](l: List[Par[A]]): Par[List[A]] = l match {
     case Nil => unit(Nil)
     case l0 :: ls => map2(l0, sequence(ls))(_ :: _)
