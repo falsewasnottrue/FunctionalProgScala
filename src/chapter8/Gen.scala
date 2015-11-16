@@ -1,9 +1,12 @@
 package chapter8
 
-class Gen[A] {
-
-}
-
 object Gen {
-  def forAll[A](a: Gen[A])(f: A => Boolean) = ???
+  import chapter6._
+  type Gen[A] = State[RNG,A]
+
+  def choose(start: Int, stopExclusive: Int): Gen[Int] = State[RNG,Int](rng => {
+    val (res, nextRng) = rng.nextInt
+    val i = (res + start) % stopExclusive
+    (i, nextRng)
+  })
 }
