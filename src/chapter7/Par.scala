@@ -3,7 +3,7 @@ package chapter7
 import java.util.concurrent.ExecutorService
 
 import scala.concurrent.Future
-
+import scala.concurrent.ExecutionContext.Implicits.global
 
 object Par {
 

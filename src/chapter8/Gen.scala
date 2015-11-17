@@ -1,12 +1,22 @@
 package chapter8
 
-object Gen {
-  import chapter6._
-  type Gen[A] = State[RNG,A]
+import chapter6._
 
-  def choose(start: Int, stopExclusive: Int): Gen[Int] = State[RNG,Int](rng => {
-    val (res, nextRng) = rng.nextInt
-    val i = (res + start) % stopExclusive
-    (i, nextRng)
-  })
+case class Gen[A](sample: State[RNG, A])
+
+object Gen {
+
+  def choose(start: Int, stopExclusive: Int): Gen[Int] = new Gen[Int](
+    State[RNG, Int](rng => {
+      val (nextInt, nextRng) = rng.nextInt
+      val res = (nextInt + start) % stopExclusive
+      (res, nextRng)
+    })
+  )
+
+  def unit[A](a: => A): Gen[A] = ???
+
+  def boolean: Gen[Boolean] = ???
+
+  def listOfN[A](n: Int, g: Gen[A]): Gen[List[A]] = ???
 }
