@@ -14,7 +14,9 @@ object Gen {
     })
   )
 
-  def unit[A](a: => A): Gen[A] = ???
+  def unit[A](a: => A): Gen[A] = new Gen[A](
+    State[RNG, A](rng => (a, rng))
+  )
 
   def boolean: Gen[Boolean] = ???
 

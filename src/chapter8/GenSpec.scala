@@ -15,5 +15,12 @@ class GenSpec extends Specification {
       v must be_>=(1)
       v must be_<(10)
     }
+
+    "implement unit" in {
+      val genA: Gen[String] = Gen.unit("abc")
+      val v = genA.sample.run(rng)._1
+
+      v must equalTo("abc")
+    }
   }
 }
