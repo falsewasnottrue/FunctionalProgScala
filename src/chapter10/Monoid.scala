@@ -16,23 +16,28 @@ object Monoid {
     def zero = Nil
   }
 
-  val intAddMonoid = new Monoid[Int] {
+  val intAddition = new Monoid[Int] {
     def op(a1: Int, a2: Int) = a1 + a2
     def zero = 0
   }
 
-  val intMultMonoid = new Monoid[Int] {
+  val intMultiplication = new Monoid[Int] {
     def op(a1: Int, a2: Int) = a1 * a2
     def zero = 1
   }
 
-  val boolAndMonoid = new Monoid[Boolean] {
+  val booleanAnd = new Monoid[Boolean] {
     def op(a1: Boolean, a2: Boolean) = a1 && a2
     def zero = true
   }
 
-  val boolOrMonoid = new Monoid[Boolean] {
+  val booleanOr = new Monoid[Boolean] {
     def op(a1: Boolean, a2: Boolean) = a1 || a2
     def zero = false
+  }
+
+  def optionMonoid[A] = new Monoid[Option[A]] {
+    def op(a1: Option[A], a2: Option[A]) = ???
+    def zero = None
   }
 }
