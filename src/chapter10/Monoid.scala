@@ -43,4 +43,10 @@ object Monoid {
     }
     def zero = None
   }
+
+  type EndoFun[A] = A => A
+  def endoMonoid[A] = new Monoid[EndoFun[A]] {
+    def op(f1: EndoFun[A], f2: EndoFun[A]): EndoFun[A] = a => (f1 andThen f2)(a)
+    def zero: EndoFun[A] = a => a
+  }
 }

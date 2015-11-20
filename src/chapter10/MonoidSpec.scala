@@ -40,5 +40,11 @@ class MonoidSpec extends Specification with ScalaCheck {
       }
     }
 
+    "endoMonoid is a Monoid" in {
+      // TODO how to test equality of functions
+
+
+    }
+
   }
 }
