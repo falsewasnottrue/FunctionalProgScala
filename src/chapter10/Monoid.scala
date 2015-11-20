@@ -50,8 +50,10 @@ object Monoid {
     def zero: EndoFun[A] = a => a
   }
 
-  def wordsMonoid: Monoid[String] = new Monoid[String] {
+  val wordsMonoid: Monoid[String] = new Monoid[String] {
     def op(a1: String, a2: String): String = (a1.trim + " " + a2.trim).trim
     def zero: String = ""
   }
+
+  def concatenate[A](as: List[A], m: Monoid[A]): A = as.foldLeft(m.zero)(m.op)
 }

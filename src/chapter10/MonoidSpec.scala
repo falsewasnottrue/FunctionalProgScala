@@ -45,5 +45,10 @@ class MonoidSpec extends Specification with ScalaCheck {
       wordsMonoid.op("Hic ", wordsMonoid.op(" est", "chorda")) must equalTo("Hic est chorda")
     }
 
+    "concatenate over stringMonoid" in {
+      val ls = List("a", "b", "c")
+      concatenate(ls, stringMonoid) must equalTo("abc")
+      concatenate(ls, wordsMonoid) must equalTo("a b c")
+    }
   }
 }
