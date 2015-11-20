@@ -37,7 +37,10 @@ object Monoid {
   }
 
   def optionMonoid[A] = new Monoid[Option[A]] {
-    def op(a1: Option[A], a2: Option[A]) = ???
+    def op(a1: Option[A], a2: Option[A]): Option[A] = (a1,a2) match {
+      case (Some(_), _) => a1
+      case (_, _) => a2
+    }
     def zero = None
   }
 }
