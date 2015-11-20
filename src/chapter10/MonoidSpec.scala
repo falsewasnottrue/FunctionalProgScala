@@ -40,10 +40,9 @@ class MonoidSpec extends Specification with ScalaCheck {
       }
     }
 
-    "endoMonoid is a Monoid" in {
-      // TODO how to test equality of functions
-
-
+    "wordsMonoid is a Monoid" in {
+      wordsMonoid.op("Hic", wordsMonoid.op("est ", "chorda ")) must equalTo("Hic est chorda")
+      wordsMonoid.op("Hic ", wordsMonoid.op(" est", "chorda")) must equalTo("Hic est chorda")
     }
 
   }

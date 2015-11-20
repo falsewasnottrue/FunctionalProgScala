@@ -49,4 +49,9 @@ object Monoid {
     def op(f1: EndoFun[A], f2: EndoFun[A]): EndoFun[A] = a => (f1 andThen f2)(a)
     def zero: EndoFun[A] = a => a
   }
+
+  def wordsMonoid: Monoid[String] = new Monoid[String] {
+    def op(a1: String, a2: String): String = (a1.trim + " " + a2.trim).trim
+    def zero: String = ""
+  }
 }
