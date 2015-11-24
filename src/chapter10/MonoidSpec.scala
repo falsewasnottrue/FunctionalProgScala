@@ -61,7 +61,7 @@ class MonoidSpec extends Specification with ScalaCheck {
       }
     }
     */
-    
+
     "productMonoid is a Monoid" in {
       implicit val arbitraryBoolean = Arbitrary.arbitrary[Boolean]
 
