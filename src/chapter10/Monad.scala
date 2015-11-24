@@ -13,3 +13,8 @@ trait Monad[M[_]] extends Functor[M] {
   def map2[A,B,C](ma: M[A], mb: M[B])(f: (A, B) => C): M[C] =
     flatMap(ma)(a => map(mb)(b => f(a, b)))
 }
+
+object OptionMonad extends Monad[Option] {
+  override def unit[A](a: => A): Option[A] = Some(a)
+  override def flatMap[A, B](ma: Option[A])(f: (A) => Option[B]): Option[B] = ma.flatMap(f)
+}
