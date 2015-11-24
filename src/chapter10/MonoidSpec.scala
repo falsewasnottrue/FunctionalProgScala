@@ -51,12 +51,25 @@ class MonoidSpec extends Specification with ScalaCheck {
       concatenate(ls, wordsMonoid) must equalTo("a b c")
     }
 
+    /**
     "wordCountMonoid is a Monoid" in {
       implicit var arbitraryWordCount = ???
       prop { (w1: WordCount, w2: WordCount, w3: WordCount) =>
         wordCountMonoid.op(w1, wordCountMonoid.zero) must equalTo(w1)
         wordCountMonoid.op(wordCountMonoid.zero, w2) must equalTo(w2)
         wordCountMonoid.op(w1, wordCountMonoid.op(w2, w3)) must equalTo(wordCountMonoid.op(wordCountMonoid.op(w1,w2),w3))
+      }
+    }
+    */
+    
+    "productMonoid is a Monoid" in {
+      implicit val arbitraryBoolean = Arbitrary.arbitrary[Boolean]
+
+      val prodMonoid = productMonoid(booleanOr, booleanAnd)
+      prop { (a1: Boolean, a2: Boolean, a3: Boolean, a4: Boolean, a5: Boolean, a6: Boolean) =>
+        prodMonoid.op((a1,a2), prodMonoid.zero) must equalTo((a1,a2))
+        prodMonoid.op(prodMonoid.zero, (a1,a2)) must equalTo((a1,a2))
+        prodMonoid.op((a1,a2), prodMonoid.op((a3,a4),(a5,a6))) must equalTo(prodMonoid.op(prodMonoid.op((a1,a2),(a3,a4)),(a5,a6)))
       }
     }
   }
