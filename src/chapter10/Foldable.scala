@@ -8,7 +8,7 @@ trait Foldable[F[_]] {
     foldLeft(as)(m.zero)(m.op)
 }
 
-object LFoldable extends Foldable[List] {
+object ListFoldable extends Foldable[List] {
 
   override def foldRight[A, B](as: List[A])(z: B)(f: (A, B) => B): B =
     as.foldRight(z)(f)
@@ -18,4 +18,35 @@ object LFoldable extends Foldable[List] {
 
   override def foldMap[A, B](as: List[A])(f: (A) => B)(m: Monoid[B]): B =
     as.map(f(_)).foldLeft(m.zero)(m.op)
+}
+
+sealed trait Tree[+A]
+case class Leaf[A](value: A) extends Tree[A]
+case class Branch[A](left: Tree[A], right: Tree[A]) extends Tree[A]
+
+object TreeFoldable extends Foldable[Tree] {
+
+  override def foldLeft[A, B](as: Tree[A])(z: B)(f: (B, A) => B): B = ???
+
+  override def foldRight[A, B](as: Tree[A])(z: B)(f: (A, B) => B): B = ???
+
+  override def foldMap[A, B](as: Tree[A])(f: (A) => B)(m: Monoid[B]): B = ???
+}
+
+
+object OptionFoldable extends Foldable[Option] {
+  override def foldRight[A, B](as: Option[A])(z: B)(f: (A, B) => B): B = as match {
+    case None => z
+    case Some(a) => f(a,z)
+  }
+
+  override def foldLeft[A, B](as: Option[A])(z: B)(f: (B, A) => B): B = as match {
+    case None => z
+    case Some(a) => f(z,a)
+  }
+
+  override def foldMap[A, B](as: Option[A])(f: (A) => B)(m: Monoid[B]): B = as match {
+    case None => m.zero
+    case Some(a) => m.op(f(a), m.zero)
+  }
 }
