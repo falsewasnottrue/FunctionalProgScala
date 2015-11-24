@@ -12,6 +12,9 @@ trait Monad[M[_]] extends Functor[M] {
     flatMap(ma)(a => unit(f(a)))
   def map2[A,B,C](ma: M[A], mb: M[B])(f: (A, B) => C): M[C] =
     flatMap(ma)(a => map(mb)(b => f(a, b)))
+
+  def compose[A,B,C](f: A => M[B], g: B => M[C]): A => M[C] =
+    a => flatMap(f(a))(g)
 }
 
 object OptionMonad extends Monad[Option] {
