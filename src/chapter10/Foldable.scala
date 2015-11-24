@@ -6,6 +6,10 @@ trait Foldable[F[_]] {
   def foldMap[A,B](as: F[A])(f: A => B)(m: Monoid[B]): B
   def concatenate[A](as: F[A])(m: Monoid[A]): A =
     foldLeft(as)(m.zero)(m.op)
+
+  def toList[A](fa: F[A]): List[A] = foldLeft(fa)(Nil: List[A]){
+    case (ls, a) => ls :+ a
+  }
 }
 
 object ListFoldable extends Foldable[List] {
@@ -18,6 +22,8 @@ object ListFoldable extends Foldable[List] {
 
   override def foldMap[A, B](as: List[A])(f: (A) => B)(m: Monoid[B]): B =
     as.map(f(_)).foldLeft(m.zero)(m.op)
+
+  override def toList[A](fa: List[A]): List[A] = fa
 }
 
 sealed trait Tree[+A]

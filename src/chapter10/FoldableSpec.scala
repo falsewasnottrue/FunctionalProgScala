@@ -5,10 +5,15 @@ import Monoid._
 
 class FoldableSpec extends Specification {
 
-  "LFoldable" should {
+  "ListFoldable" should {
     "concatenate" in {
       val ls = List("abc", "de", "fgh")
       ListFoldable.concatenate(ls)(stringMonoid) must equalTo("abcdefgh")
+    }
+
+    "toList" in {
+      ListFoldable.toList(Nil) must equalTo(Nil)
+      ListFoldable.toList(List(1,2,3)) must equalTo(List(1,2,3))
     }
   }
 
@@ -35,6 +40,11 @@ class FoldableSpec extends Specification {
     "foldMap" in {
       OptionFoldable.foldMap[Int, String](None)(_.toString)(stringMonoid) must equalTo("")
       OptionFoldable.foldMap[Int, String](Some(7))(_.toString)(stringMonoid) must equalTo("7")
+    }
+
+    "toList" in {
+      OptionFoldable.toList(None) must equalTo(Nil)
+      OptionFoldable.toList(Some(1)) must equalTo(List(1))
     }
   }
 }
