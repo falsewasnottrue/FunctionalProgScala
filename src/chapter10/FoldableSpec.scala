@@ -17,14 +17,26 @@ class FoldableSpec extends Specification {
     }
   }
 
-  /**
   "TreeFoldable" should {
     "foldLeft" in {
-      val tree = Leaf(0)
-      TreeFoldable.foldLeft(tree)(intAddition.zero)(intAddition.op) must equalTo(0)
+      TreeFoldable.foldLeft(Leaf(0))(intAddition.zero)(intAddition.op) must equalTo(0)
+
+      val tree = Branch(Branch(Leaf("a"), Leaf("b")), Leaf("c"))
+      TreeFoldable.foldLeft(tree)(stringMonoid.zero)(stringMonoid.op) must equalTo("abc")
+    }
+
+    "foldRight" in {
+      TreeFoldable.foldRight(Leaf(0))(intAddition.zero)(intAddition.op) must equalTo(0)
+
+      val tree = Branch(Branch(Leaf("a"), Leaf("b")), Leaf("c"))
+      TreeFoldable.foldRight(tree)(stringMonoid.zero)(stringMonoid.op) must equalTo("cba")
+    }
+
+    "foldMap" in {
+      val tree = Branch(Branch(Leaf("1"), Leaf("2")), Leaf("3"))
+      TreeFoldable.foldMap(tree)(_.toInt)(intAddition) must equalTo(6)
     }
   }
-  */
 
   "OptionFoldable" should {
     "foldLeft" in {

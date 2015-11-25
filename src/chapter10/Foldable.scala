@@ -26,17 +26,37 @@ object ListFoldable extends Foldable[List] {
   override def toList[A](fa: List[A]): List[A] = fa
 }
 
-sealed trait Tree[+A]
-case class Leaf[A](value: A) extends Tree[A]
-case class Branch[A](left: Tree[A], right: Tree[A]) extends Tree[A]
+sealed trait Tree[+A] {
+  def map[B](f: A => B): Tree[B]
+}
+case class Leaf[A](value: A) extends Tree[A] {
+  def map[B](f: A => B): Tree[B] = Leaf(f(value))
+}
+case class Branch[A](left: Tree[A], right: Tree[A]) extends Tree[A] {
+  def map[B](f: A => B): Tree[B] = Branch(left.map(f), right.map(f))
+}
 
 object TreeFoldable extends Foldable[Tree] {
 
-  override def foldLeft[A, B](as: Tree[A])(z: B)(f: (B, A) => B): B = ???
+  override def foldLeft[A, B](as: Tree[A])(z: B)(f: (B, A) => B): B = foldLeftAcc(z)(as)(f)
 
-  override def foldRight[A, B](as: Tree[A])(z: B)(f: (A, B) => B): B = ???
+  private def foldLeftAcc[A,B](acc: B)(as: Tree[A])(f: (B,A) => B): B = as match {
+    case Leaf(value) => f(acc, value)
+    case Branch(left, right) =>
+      foldLeftAcc(foldLeftAcc(acc)(left)(f))(right)(f)
+  }
 
-  override def foldMap[A, B](as: Tree[A])(f: (A) => B)(m: Monoid[B]): B = ???
+  override def foldRight[A, B](as: Tree[A])(z: B)(f: (A, B) => B): B =
+    foldRightAcc(z)(as)(f)
+
+  private def foldRightAcc[A,B](acc: B)(as: Tree[A])(f: (A,B) => B): B = as match {
+    case Leaf(value) => f(value, acc)
+    case Branch(left, right) =>
+      foldRightAcc(foldRightAcc(acc)(right)(f))(left)(f)
+  }
+
+  override def foldMap[A, B](as: Tree[A])(f: (A) => B)(m: Monoid[B]): B =
+    foldLeft(as.map(f))(m.zero)(m.op)
 }
 
 
