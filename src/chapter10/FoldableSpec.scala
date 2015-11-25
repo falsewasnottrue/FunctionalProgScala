@@ -29,7 +29,7 @@ class FoldableSpec extends Specification {
       TreeFoldable.foldRight(Leaf(0))(intAddition.zero)(intAddition.op) must equalTo(0)
 
       val tree = Branch(Branch(Leaf("a"), Leaf("b")), Leaf("c"))
-      TreeFoldable.foldRight(tree)(stringMonoid.zero)(stringMonoid.op) must equalTo("abc")
+    TreeFoldable.foldRight(tree)(stringMonoid.zero)(stringMonoid.op) must equalTo("abc")
     }
 
     "foldMap" in {
