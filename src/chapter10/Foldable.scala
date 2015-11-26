@@ -76,3 +76,21 @@ object OptionFoldable extends Foldable[Option] {
     case Some(a) => m.op(f(a), m.zero)
   }
 }
+
+object EitherFoldable extends Foldable[({type eitherM[A] = Either[String,A]})#eitherM] {
+
+  override def foldLeft[A, B](as: Either[String, A])(z: B)(f: (B, A) => B): B = as match {
+    case Left(_) => z
+    case Right(a) => f(z,a)
+  }
+
+  override def foldRight[A, B](as: Either[String, A])(z: B)(f: (A, B) => B): B = as match {
+    case Left(_) => z
+    case Right(a) => f(a,z)
+  }
+
+  override def foldMap[A, B](as: Either[String, A])(f: (A) => B)(m: Monoid[B]): B = as match {
+    case Left(_) => m.zero
+    case Right(a) => m.op(m.zero, f(a))
+  }
+}

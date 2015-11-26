@@ -3,6 +3,8 @@ package chapter10
 import org.specs2.mutable.Specification
 import Monoid._
 
+import scala.util.Failure
+
 class FoldableSpec extends Specification {
 
   "ListFoldable" should {
@@ -58,5 +60,28 @@ class FoldableSpec extends Specification {
       OptionFoldable.toList(None) must equalTo(Nil)
       OptionFoldable.toList(Some(1)) must equalTo(List(1))
     }
+  }
+
+  "EitherFoldable" should {
+    "foldLeft" in {
+      EitherFoldable.foldLeft[Int, Int](Left(""))(0)(_+_) must equalTo(0)
+      EitherFoldable.foldLeft[Int, Int](Right(3))(1)(_+_) must equalTo(4)
+    }
+
+    "foldRight" in {
+      EitherFoldable.foldRight[Int, Int](Left(""))(0)(_+_) must equalTo(0)
+      EitherFoldable.foldRight[Int, Int](Right(3))(1)(_+_) must equalTo(4)
+    }
+
+    "foldMap" in {
+      EitherFoldable.foldMap[Int, Int](Left(""))(_+1)(intAddition) must equalTo(0)
+      EitherFoldable.foldMap[Int, Int](Right(7))(_+1)(intAddition) must equalTo(8)
+    }
+
+    "toList" in {
+      EitherFoldable.toList(Left("")) must equalTo(Nil)
+      EitherFoldable.toList(Right(1)) must equalTo(List(1))
+    }
+
   }
 }
